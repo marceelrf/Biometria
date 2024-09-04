@@ -1,0 +1,130 @@
+---
+title: "Desvendando os Segredos dos Dados Biológicos: O Poder da Bioinformática"
+author: "Marcel Ferreira"
+lang: pt-BR
+date: today
+slide-number: c/t
+filters:
+  - highlight-text
+engine: knitr
+format:
+  live-revealjs:
+    theme: serif
+    transition: fade
+    transition-speed: slow
+    width: 1500
+    footer: "ferreiramr_phd"
+    page-layout: full
+    reference-location: document
+    chalkboard: true
+bibliography: references.bib
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+## Sobre mim
+
+-   [Física médica]{colour="#FFFFFF" bg-colour="#00688B"} - IBB/UNESP (2011 - 2014);
+
+-   Mestrado em [Biotecnologia]{colour="#FFFFFF" bg-colour="#00688B"} - IBB/UNESP (2015 - 2017);
+
+-   Doutorado em [Biotecnologia]{colour="#FFFFFF" bg-colour="#00688B"} - IBB/UNESP (2017 - 2022);
+
+-   Pós-doutorado em [Genética]{colour="#FFFFFF" bg-colour="#b22222"} - FMB/UNESP (2023 - );
+
+## Sobre mim
+
+-   Interesses
+
+# Bioinformática
+
+## O que é bioinformática?
+
+-   **NIH**: *"Bioinformatics, as related to genetics and genomics, is a scientific subdiscipline that involves using computer technology to collect, store, analyze and disseminate biological data and information, such as DNA/RNA and amino acid sequences or annotations about those sequences."*
+
+![NIH](img/Imagem1.png){width="10%"}
+
+## O que é bioinformática?
+
+-   **NIH**: *"Bioinformatics, as related to [genetics]{colour="#FFFFFF" bg-colour="#b22222"} and [genomics]{colour="#FFFFFF" bg-colour="#b22222"}, is a scientific subdiscipline that involves using computer technology to [collect]{colour="#FFFFFF" bg-colour="#b22222"}, [store]{colour="#FFFFFF" bg-colour="#b22222"}, [analyze]{colour="#FFFFFF" bg-colour="#b22222"} and [disseminate]{colour="#FFFFFF" bg-colour="#b22222"} biological data and information, such as [DNA/RNA]{color="#FFFFFF" bg-color="#0000FF"} and [amino acid]{color="#FFFFFF" bg-color="#0000FF"} sequences or annotations about those sequences."*
+
+![NIH](img/Imagem1.png){width="10%"}
+
+## O projeto Genoma
+
+![Genome - https://www.genome.gov/human-genome-project](https://www.genome.gov/sites/default/files/media/images/2022-08/Covers_DYN.jpg){width="100%"}
+
+## O que é bioinformática? {auto-animate="true" auto-animate-easing="ease-in-out"}
+
+-   O que é um [gene]{colour="#FFFFFF" bg-colour="#b22222"}?
+
+<br>
+
+-   O que é um [genoma]{colour="#FFFFFF" bg-colour="#b22222"}?
+
+<br>
+
+## O que é bioinformática? {.smaller auto-animate="true" auto-animate-easing="ease-in-out"}
+
+-   O que é um [gene]{colour="#FFFFFF" bg-colour="#b22222"}?
+    -   Os genes são formados por [sequências de DNA]{colour="#FFFFFF" bg-colour="#ff6600"} e estão dispostos, um após o outro, em locais específicos dos [cromossomos]{colour="#FFFFFF" bg-colour="#ff6600"} no núcleo das células. Eles contêm informações para a produção de proteínas específicas que levam à expressão de uma característica ou traço físico específico, como a cor do cabelo ou dos olhos, ou a uma função específica em uma [célula]{colour="#FFFFFF" bg-colour="#ff6600"}.
+
+<br>
+
+-   O que é um [genoma]{colour="#FFFFFF" bg-colour="#b22222"}?
+    -   Um genoma é o [conjunto completo]{colour="#FFFFFF" bg-colour="#ff6600"} de informações genéticas em um [organismo]{colour="#FFFFFF" bg-colour="#ff6600"}.
+
+## O que é bioinformática?
+
+[![Nucleotídeos, genes, cromossomos, e mais..](https://nci-media.cancer.gov/pdq/media/images/761781-571.jpg){fig-align="center"}](https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/gene)
+
+## Dogma central da biologia molecular
+
+[![Dogma central da biologia molecular.](https://www.cancer.gov/ccg/sites/g/files/xnrzdm256/files/styles/cgov_article/public/cgov_image/media_image/2022-06/blog%20An%20Introduction%20to%20Proteogenomics-%20Appreciating%20the%20Complexity%20of%20the%20Central%20Dogma.png?itok=muJvrT_H){fig-align="center"}](https://www.cancer.gov/ccg/sites/g/files/xnrzdm256/files/styles/cgov_article/public/cgov_image/media_image/2022-06/blog%20An%20Introduction%20to%20Proteogenomics-%20Appreciating%20the%20Complexity%20of%20the%20Central%20Dogma.png?itok=muJvrT_H)
+
+## O que é bioinformática? - Era das ômicas
+
+![Multi-Omics - https://comics.dcv.fct.unl.pt/resources/](https://comics.dcv.fct.unl.pt/media/posts/52/responsive/SciTechSociety2020-2xl.jpg)
+
+## O que é bioinformática? - Era das ômicas
+
+[![Animal Testing and its Alternatives -- the Most Important Omics is Economics](img/economics.png){width="639"}](https://www.altex.org/index.php/altex/article/view/1134/1131)
+
+# Dados biológicos
+
+## DNA
+
+[![Estrutura do DNA](https://undsci.berkeley.edu/wp-content/uploads/2022/08/helix_photo51.jpg)](https://undsci.berkeley.edu/the-science-checklist-applied-solving-dnas-double-helix/)
+
+## DNA
+
+[![Estrutura do DNA](https://microbenotes.com/wp-content/uploads/2024/04/Double-Helix-Structure-of-DNA.jpeg){fig-align="center"}](https://microbenotes.com/double-helix-structure-of-dna/)
+
+## DNA
+
+::: columns
+::: {.column width="30%"}
+-   Adenina;
+
+    <br>
+
+-   Citosina;
+
+    <br>
+
+-   Guanina;
+
+    <br>
+
+-   Timina;
+
+    <br>
+:::
+
+::: {.column width="70%"}
+[![Bases nitrogenadas](img/Bases_nitrogenadas.png){fig-align="center"}](https://pt.wikipedia.org/wiki/Base_nitrogenada)
+:::
+
+:::
+
+
