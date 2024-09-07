@@ -32,9 +32,19 @@ bibliography: references.bib
 
 -   Pós-doutorado em [Genética]{colour="#FFFFFF" bg-colour="#b22222"} - FMB/UNESP (2023 - );
 
-## Sobre mim
+## Sobre mim - Interesses
 
--   Interesses
+-   Métodos alternativos ao uso de animais;
+
+-   Identificação humana via DNA;
+
+-   Biologia do tecido ósseo;
+
+-   Biomateriais;
+
+-   Regeneração tecidual;
+
+-   Ciência aberta;
 
 # Bioinformática
 
@@ -90,15 +100,19 @@ bibliography: references.bib
 
 [![Animal Testing and its Alternatives -- the Most Important Omics is Economics](img/economics.png){width="639"}](https://www.altex.org/index.php/altex/article/view/1134/1131)
 
+## Bioinfomática - Ciência de dados
+
+[![Extraído de Medium Zahra Elhamraoui](https://miro.medium.com/v2/resize:fit:786/format:webp/0*hvg2FSO_6JsSQ5lo){fig-align="center"}](https://medium.com/@zahraelhamraoui1997/data-science-versus-bioinformatics-859a086c8587)
+
 # Dados biológicos
 
 ## DNA
 
-[![Estrutura do DNA](https://undsci.berkeley.edu/wp-content/uploads/2022/08/helix_photo51.jpg)](https://undsci.berkeley.edu/the-science-checklist-applied-solving-dnas-double-helix/)
+[![Estrutura do DNA](https://undsci.berkeley.edu/wp-content/uploads/2022/08/helix_photo51.jpg){width="700"}](https://undsci.berkeley.edu/the-science-checklist-applied-solving-dnas-double-helix/)
 
 ## DNA
 
-[![Estrutura do DNA](https://microbenotes.com/wp-content/uploads/2024/04/Double-Helix-Structure-of-DNA.jpeg){fig-align="center"}](https://microbenotes.com/double-helix-structure-of-dna/)
+[![Estrutura do DNA](https://microbenotes.com/wp-content/uploads/2024/04/Double-Helix-Structure-of-DNA.jpeg){fig-align="center" width="700"}](https://microbenotes.com/double-helix-structure-of-dna/)
 
 ## DNA
 
@@ -124,7 +138,341 @@ bibliography: references.bib
 ::: {.column width="70%"}
 [![Bases nitrogenadas](img/Bases_nitrogenadas.png){fig-align="center"}](https://pt.wikipedia.org/wiki/Base_nitrogenada)
 :::
-
 :::
 
+## DNA
 
+::: columns
+::: {.column width="50%"}
+[![Adenina](img/Adenine.svg){fig-align="center" width="220"}](https://en.wikipedia.org/wiki/Adenine)
+:::
+
+::: {.column width="50%"}
+SMILES:
+
+`NC1=NC=NC2=C1N=CN2`
+:::
+:::
+
+## DNA
+
+-   Adenina = `NC1=NC=NC2=C1N=CN2`;
+
+    <br>
+
+-   Citosina = `C1=C(NC(=O)N=C1)N`;
+
+    <br>
+
+-   Guanina = `C1=NC2=C(N1)C(=O)NC(=N2)N`;
+
+    <br>
+
+-   Timina = `O=C1NC(=O)NC=C1C`;
+
+## Sequências de DNA
+
+-   Convenção: `A`, `T`, `C`, `G`;
+
+<br>
+
+-   Formato de FASTA de arquivos;
+
+<br>
+
+-   Extensões: `.fasta`, `.fa`, `.fas`;
+
+## Sequências de DNA {.smaller}
+
+`>NC_000006.12:45328330-45551082 RUNX2 [organism=Homo sapiens] [GeneID=860] [chromosome=6]`
+
+`ATTCGCCTCACAAACAACCACAGAACCACAAGTGCGGTGCAAACTTTCTCCAGGAGGACAGCAAGAAGTC`
+
+`TCTGGTTTTTAAATGGTTAATCTCCGCAGGTCACTACCAGCCACCGAGACCAACAGAGTCAGTGAGTGCT`
+
+`CTCTAACCACAGTCTATGCAGTAATAGTAGGTCCTTCAAATATTTGCTCATTCTCTTTTTGTTTTGTTTC`
+
+`TTTGCTTTTCACATGTTACCAGCTACATAATTTCTTGACAGAAAAAAATAAATATAAAGTCTATGTACTC`
+
+`CAGGCATACTGTAAAACTAAAACAAGGTTTGGGTATGGTTTGTATTTTCAGTTTAAGGCTGCAAGCAGTA`
+
+`TTTACAACAGAGGGTACAAGTTCTATCTGAAAAAAAAAGGAGGGACTATGGCATCAAACAGCCTCTTCAG`
+
+`CACAGTGACACCATGTCAGCAAAACTTCTTTTGGGGTAAGTGTTACCATTTTTAAAATCCTGTAAGATAT`
+
+`...`
+
+## Sequência de Proteínas {.smaller}
+
+`>NP_001015051.3 RUNX2 [organism=Homo sapiens] [GeneID=860] [isoform=b]`
+
+`MASNSLFSTVTPCQQNFFWDPSTSRRFSPPSSSLQPGKMSDVSPVVAAQQQQQQQQQQQQQQQQQQQQQQ`
+
+`QEAAAAAAAAAAAAAAAAAVPRLRPPHDNRTMVEIIADHPAELVRTDSPNFLCSVLPSHWRCNKTLPVAF`
+
+`KVVALGEVPDGTVVTVMAGNDENYSAELRNASAVMKNQVARFNDLRFVGRSGRGKSFTLTITVFTNPPQV`
+
+`ATYHRAIKVTVDGPREPRRHRQKLDDSKPSLFSDRLSDLGRIPHPSMRVGVPPQNPRPSLNSAPSPFNPQ`
+
+`GQSQITDPRQAQSSPPWSYDQSYPSYLSQMTSPSIHSTTPLSSTRGTGLPAITDVPRRISGASELGPFSD`
+
+`PRQFPSISSLTESRFSNPRMHYPATFTYTPPVTSGMSLGMSATTHYHTYLPPPYPGSSQSQSGPFQTSST`
+
+`PYLYYGTSSGSYQFPMVPGGDRSPSRMLPPCTTTSNGSTLLNPNLPNQNDGVDADGSHSSSPTVLNSSGR`
+
+`MDESVWRPY`
+
+## Anotações biológicas
+
+[![Anotações relacionadas ao gene RUNX2.](img/annot.png){fig-align="center"}](https://www.ncbi.nlm.nih.gov/gene/860/)
+
+## Anotações biológicas
+
+::: columns
+::: {.column width="50%"}
+![Eu.](images/marshall.jpg){fig-align="left" width="300"}
+:::
+
+::: {.column width="50%"}
+-   Nome: `Marcel Ferreira`;
+
+-   CPF: `123.456.789-0`;
+
+-   Passaporte: `XXXXXXX`;
+
+-   RA: `PAT123456`;
+
+-   Username: `marceelrf`;
+:::
+:::
+
+## Convenção de nomes de genes
+
+[![https://www.genenames.org/](img/HGNC.png){fig-align="center"}](https://www.genenames.org/)
+
+## Convenção de nomes de genes
+
+![[@lewis2021]](img/nature1.png){fig-align="center"}
+
+## Convenção de nomes de genes
+
+::: columns
+::: {.column width="65%"}
+[![HGNC alterou nomes de genes.](img/Imagem5.png){fig-align="left"}](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)
+:::
+
+::: {.column .smaller width="35%"}
+-   MARCH1 -\> MARCHF1
+
+<br>
+
+-   SEPT1 -\> SEPTIN1
+
+<br>
+
+-   OCT4\* // POU5F1
+:::
+:::
+
+## Bancos de dados
+
+![Consórcios de bases de dados](img/consorcios_db.png){fig-align="center" width="700"}
+
+# Formato de dados
+
+## Formato de dados
+
+## Fluxograma
+
+![](img/mermaid-diagram-2024-09-07-161358.svg)
+
+## Dados de sequenciamento de DNA/RNA
+
+Arquivo FASTQ:
+
+```{r, echo=F}
+cat("@SEQ_ID1\nGATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT\n+\n!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65\n@SEQ_ID2\nCGGAAGAACAGGCAACCTAAGCACAATCGGTATTGTCCGAATGTGGAACGGCTTACAGTC\n+\n@:D4B2B82:IH':<*)27)13+HF<(6H654\".2CC&&DI,.E?@-*:+<+6++;$G$6")
+```
+
+## Biologia sistêmica
+
+[![Biologia sistêmica .](https://omicscouts.com/media/files/blockcontent/2016-09/SystemsBiology.jpg){fig-align="center" width="600"}](https://omicscouts.com/en/disease-and-systems-biology.html)
+
+## KEGG
+
+::: columns
+::: {.column width="30%"}
+[![Enciclopédia de Genes e Genomas de Kioto](https://www.genome.jp/Fig/kegg128.gif){fig-align="left" width="250"}](https://www.genome.jp/kegg/pathway.html)
+:::
+
+::: {.column width="70%"}
+:::
+:::
+
+## KEGG
+
+[![Via de insulina (map04910).](img/kegg_insulin.png){fig-align="center" width="750"}](https://www.kegg.jp/pathway/map04910)
+
+## Gene Ontology
+
+## Redes de sinalização
+
+![Redes de sinalização [@lemesdossantossanna2024; @shannon2003].](img/cytoscape.png){fig-align="center" width="700"}
+
+## Vias de sinalização
+
+[![Vias de sinalização: signor .](img/signor.png){width="900"}](https://signor.uniroma2.it/)
+
+## **Over Representation Analysis (ORA)**
+
+-   Abordagem amplamente utilizada para determinar se funções ou processos biológicos conhecidos estão super-representados (= enriquecidos) em uma lista de genes derivados de experimentos, por exemplo, uma lista de genes diferencialmente expressos (DEGs);
+
+-   O valor de p pode ser calculado pela distribuição hipergeométrica [@boyle2004; @yu2012; @wu2021];
+
+## **Over Representation Analysis (ORA)** {.smaller}
+
+::: columns
+::: {.column width="50%"}
+<br>
+
+$$
+p = 1-\sum_{i=0}^{k-1}{\frac{\binom{M}{i}\binom{N-M}{n-i}}{\binom{N}{n}}}
+$$
+:::
+
+::: {.column width="50%"}
+-   `N` é o número total de genes;
+
+-   `M` é o número de genes que são anotados;
+
+-   `n` é o tamanho da lista de interesse;
+
+-   `k` é o número de genes nessa lista que são anotados para o conjunto de genes;
+
+<br>
+
+-   `{clusterProfiler}` automatiza essa análise [@clusterProfiler];
+:::
+:::
+
+## **Over Representation Analysis (ORA)** {.smaller}
+
+**Exemplo**: Suponhamos que temos 17.980 genes detectados em um estudo de microarray e 57 genes foram expressos diferencialmente. Entre os genes diferencialmente expressos, 28 são anotados em um conjunto de genes;
+
+::: panel-tabset
+## Definir
+
+```{r}
+#| echo: true
+d <- data.frame(gene.not.interest=c(2613, 15310), gene.in.interest=c(28, 29))
+row.names(d) <- c("In_category", "not_in_category")
+d
+```
+
+## Calcular
+
+```{r}
+#| echo: true
+fisher.test(d, alternative = "greater")
+```
+:::
+
+## Gene Set Enrichment Analysis (GSEA)
+
+## Gene Set Variation Analysis (GSVA)
+
+# Trabalhos
+
+## Epigenética e fenotipagem forense por DNA - *Long reads sequencing*
+
+[![Usos forense do DNA [@gurkan2021].](img/forense.png)](https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2021.708222/full)
+
+## Epigenética e fenotipagem forense por DNA
+
+![STR - Microsatalites](img/strs.png)
+
+## Epigenética e fenotipagem forense por DNA
+
+[![Sequenciamento Oxford Nanopore [@wang2021]](img/Imagem8.jpg){alt="Sequenciamento Oxford Nanopore" fig-align="center" width="515"}](https://www.nature.com/articles/s41587-021-01108-x)
+
+## Epigenética e fenotipagem forense por DNA
+
+![Comparação de sequenciamento de leituras curtas e longas.](img/short_long.png){fig-align="center"}
+
+## Biomateriais e remodelamento ósseo
+
+![Remodelamento ósseo.](img/remodelamento.png){fig-align="center"}
+
+## Biomateriais e remodelamento ósseo
+
+![Fatores de crescimento.](img/regeneracaoOssea.jpeg){fig-align="center" width="800"}
+
+## Desafios para uso de bioinformática
+
+-   Característica do tecido ósseo;
+
+<br>
+
+-   Poucos conjuntos de dados disponíveis sobre interação com biomateriais;
+
+## OsteoBLAST {.smaller}
+
+-   Projeto de mestrado;
+
+-   Busca por um método alternativo para uso de animais;
+
+-   Baseado em fosforilação de proteínas;
+
+-   Microarray de peptídeos (PamChip);
+
+    $$
+    \chi = \sqrt{\frac{1}{N}\sum_{i=1}^N{(\frac{A_1[i] - A_2[i]}{1-|\sigma_1[i]-\sigma_2[i]|})^2}}
+    $$
+
+## OsteoBLAST
+
+![](img/OsteoBLAST.png){fig-align="center"}
+
+## OsteoBLAST - GSVA scores
+
+## OsteoCLUST
+
+::: columns
+::: column
+![Matheus Amaral Silva](img/Matheus.jpeg){fig-align="left" width="300"}
+:::
+
+::: column
+-   Busca por métodos para classificação de biomateriais ósseos;
+
+-   Utiliza escores biológicos como: GSEA e GSVA;
+
+-   Aprendizado não supervisionado;
+:::
+:::
+
+## Biomimética {.smaller}
+
+::: columns
+::: column
+![Julia Ferreira de Moraes](img/julia.jpeg){fig-align="left" width="354"}
+:::
+
+::: column
+-   "Construção de unidades biomiméticas a partir de plasma rico em plaquetas associado ao fluído caótico utilizando misturadores estáticos: perspectivas de novos processos biotecnológicos para regeneração do tecido ósseo".\
+:::
+:::
+
+## Biomimética {.smaller}
+
+::: columns
+::: column
+![Julia Ferreira de Moraes](img/julia.jpeg){fig-align="left" width="354"}
+:::
+
+::: column
+![Fluxo caótico [@chávez-madero2020].](img/fluxoCaotico.png){fig-align="center" width="750"}
+:::
+:::
+
+## Referências

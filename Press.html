@@ -13,7 +13,7 @@
   <meta name="generator" content="quarto-1.4.552">
 
   <meta name="author" content="Marcel Ferreira">
-  <meta name="dcterms.date" content="2024-09-03">
+  <meta name="dcterms.date" content="2024-09-07">
   <title>Desvendando os Segredos dos Dados Biológicos: O Poder da Bioinformática</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -32,7 +32,92 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="Press_files/libs/revealjs/dist/theme/quarto.css">
   <link href="Press_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="Press_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -343,7 +428,7 @@ Marcel Ferreira
 </div>
 </div>
 
-  <p class="date">2024-09-03</p>
+  <p class="date">2024-09-07</p>
 </section>
 <section id="sobre-mim" class="slide level2">
 <h2>Sobre mim</h2>
@@ -354,10 +439,15 @@ Marcel Ferreira
 <li><p>Pós-doutorado em <span style="color: #FFFFFF;border-radius: 0.2rem; padding: 0 0.2rem 0 0.2rem;background-color: #b22222;">Genética</span> - FMB/UNESP (2023 - );</p></li>
 </ul>
 </section>
-<section id="sobre-mim-1" class="slide level2">
-<h2>Sobre mim</h2>
+<section id="sobre-mim---interesses" class="slide level2">
+<h2>Sobre mim - Interesses</h2>
 <ul>
-<li>Interesses</li>
+<li><p>Métodos alternativos ao uso de animais;</p></li>
+<li><p>Identificação humana via DNA;</p></li>
+<li><p>Biologia do tecido ósseo;</p></li>
+<li><p>Biomateriais;</p></li>
+<li><p>Regeneração tecidual;</p></li>
+<li><p>Ciência aberta;</p></li>
 </ul>
 </section>
 <section>
@@ -448,6 +538,19 @@ Marcel Ferreira
 <figcaption>Animal Testing and its Alternatives – the Most Important Omics is Economics</figcaption>
 </figure>
 </div>
+</section>
+<section id="bioinfomática---ciência-de-dados" class="slide level2">
+<h2>Bioinfomática - Ciência de dados</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://medium.com/@zahraelhamraoui1997/data-science-versus-bioinformatics-859a086c8587"><img data-src="https://miro.medium.com/v2/resize:fit:786/format:webp/0*hvg2FSO_6JsSQ5lo.png" class="quarto-figure quarto-figure-center" alt="Extraído de Medium Zahra Elhamraoui"></a></p>
+</figure>
+</div>
+<figcaption>Extraído de Medium Zahra Elhamraoui</figcaption>
+</figure>
+</div>
 </section></section>
 <section>
 <section id="dados-biológicos" class="title-slide slide level1 center">
@@ -458,7 +561,7 @@ Marcel Ferreira
 <h2>DNA</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://undsci.berkeley.edu/the-science-checklist-applied-solving-dnas-double-helix/"><img data-src="https://undsci.berkeley.edu/wp-content/uploads/2022/08/helix_photo51.jpg" alt="Estrutura do DNA"></a></p>
+<p><a href="https://undsci.berkeley.edu/the-science-checklist-applied-solving-dnas-double-helix/"><img data-src="https://undsci.berkeley.edu/wp-content/uploads/2022/08/helix_photo51.jpg" width="700" alt="Estrutura do DNA"></a></p>
 <figcaption>Estrutura do DNA</figcaption>
 </figure>
 </div>
@@ -469,7 +572,7 @@ Marcel Ferreira
 <figure>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://microbenotes.com/double-helix-structure-of-dna/"><img data-src="https://microbenotes.com/wp-content/uploads/2024/04/Double-Helix-Structure-of-DNA.jpeg" class="quarto-figure quarto-figure-center" alt="Estrutura do DNA"></a></p>
+<p><a href="https://microbenotes.com/double-helix-structure-of-dna/"><img data-src="https://microbenotes.com/wp-content/uploads/2024/04/Double-Helix-Structure-of-DNA.jpeg" class="quarto-figure quarto-figure-center" width="700" alt="Estrutura do DNA"></a></p>
 </figure>
 </div>
 <figcaption>Estrutura do DNA</figcaption>
@@ -495,14 +598,463 @@ Marcel Ferreira
 <figure>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://pt.wikipedia.org/wiki/Base_nitrogenada"><img data-src="img/Bases_nitrogenadas.png" class="quarto-figure quarto-figure-center" alt="Bases nitrogenada"></a></p>
+<p><a href="https://pt.wikipedia.org/wiki/Base_nitrogenada"><img data-src="img/Bases_nitrogenadas.png" class="quarto-figure quarto-figure-center" alt="Bases nitrogenadas"></a></p>
 </figure>
 </div>
-<figcaption>Bases nitrogenada</figcaption>
+<figcaption>Bases nitrogenadas</figcaption>
 </figure>
 </div>
 </div>
 </div>
+</section>
+<section id="dna-3" class="slide level2">
+<h2>DNA</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://en.wikipedia.org/wiki/Adenine"><img data-src="img/Adenine.svg" class="quarto-figure quarto-figure-center" width="220" alt="Adenina"></a></p>
+</figure>
+</div>
+<figcaption>Adenina</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p>SMILES:</p>
+<p><code>NC1=NC=NC2=C1N=CN2</code></p>
+</div>
+</div>
+</section>
+<section id="dna-4" class="slide level2">
+<h2>DNA</h2>
+<ul>
+<li><p>Adenina = <code>NC1=NC=NC2=C1N=CN2</code>;</p>
+<p><br></p></li>
+<li><p>Citosina = <code>C1=C(NC(=O)N=C1)N</code>;</p>
+<p><br></p></li>
+<li><p>Guanina = <code>C1=NC2=C(N1)C(=O)NC(=N2)N</code>;</p>
+<p><br></p></li>
+<li><p>Timina = <code>O=C1NC(=O)NC=C1C</code>;</p></li>
+</ul>
+</section>
+<section id="sequências-de-dna" class="slide level2">
+<h2>Sequências de DNA</h2>
+<ul>
+<li>Convenção: <code>A</code>, <code>T</code>, <code>C</code>, <code>G</code>;</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Formato de FASTA de arquivos;</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Extensões: <code>.fasta</code>, <code>.fa</code>, <code>.fas</code>;</li>
+</ul>
+</section>
+<section id="sequências-de-dna-1" class="slide level2 smaller">
+<h2>Sequências de DNA</h2>
+<p><code>&gt;NC_000006.12:45328330-45551082 RUNX2 [organism=Homo sapiens] [GeneID=860] [chromosome=6]</code></p>
+<p><code>ATTCGCCTCACAAACAACCACAGAACCACAAGTGCGGTGCAAACTTTCTCCAGGAGGACAGCAAGAAGTC</code></p>
+<p><code>TCTGGTTTTTAAATGGTTAATCTCCGCAGGTCACTACCAGCCACCGAGACCAACAGAGTCAGTGAGTGCT</code></p>
+<p><code>CTCTAACCACAGTCTATGCAGTAATAGTAGGTCCTTCAAATATTTGCTCATTCTCTTTTTGTTTTGTTTC</code></p>
+<p><code>TTTGCTTTTCACATGTTACCAGCTACATAATTTCTTGACAGAAAAAAATAAATATAAAGTCTATGTACTC</code></p>
+<p><code>CAGGCATACTGTAAAACTAAAACAAGGTTTGGGTATGGTTTGTATTTTCAGTTTAAGGCTGCAAGCAGTA</code></p>
+<p><code>TTTACAACAGAGGGTACAAGTTCTATCTGAAAAAAAAAGGAGGGACTATGGCATCAAACAGCCTCTTCAG</code></p>
+<p><code>CACAGTGACACCATGTCAGCAAAACTTCTTTTGGGGTAAGTGTTACCATTTTTAAAATCCTGTAAGATAT</code></p>
+<p><code>...</code></p>
+</section>
+<section id="sequência-de-proteínas" class="slide level2 smaller">
+<h2>Sequência de Proteínas</h2>
+<p><code>&gt;NP_001015051.3 RUNX2 [organism=Homo sapiens] [GeneID=860] [isoform=b]</code></p>
+<p><code>MASNSLFSTVTPCQQNFFWDPSTSRRFSPPSSSLQPGKMSDVSPVVAAQQQQQQQQQQQQQQQQQQQQQQ</code></p>
+<p><code>QEAAAAAAAAAAAAAAAAAVPRLRPPHDNRTMVEIIADHPAELVRTDSPNFLCSVLPSHWRCNKTLPVAF</code></p>
+<p><code>KVVALGEVPDGTVVTVMAGNDENYSAELRNASAVMKNQVARFNDLRFVGRSGRGKSFTLTITVFTNPPQV</code></p>
+<p><code>ATYHRAIKVTVDGPREPRRHRQKLDDSKPSLFSDRLSDLGRIPHPSMRVGVPPQNPRPSLNSAPSPFNPQ</code></p>
+<p><code>GQSQITDPRQAQSSPPWSYDQSYPSYLSQMTSPSIHSTTPLSSTRGTGLPAITDVPRRISGASELGPFSD</code></p>
+<p><code>PRQFPSISSLTESRFSNPRMHYPATFTYTPPVTSGMSLGMSATTHYHTYLPPPYPGSSQSQSGPFQTSST</code></p>
+<p><code>PYLYYGTSSGSYQFPMVPGGDRSPSRMLPPCTTTSNGSTLLNPNLPNQNDGVDADGSHSSSPTVLNSSGR</code></p>
+<p><code>MDESVWRPY</code></p>
+</section>
+<section id="anotações-biológicas" class="slide level2">
+<h2>Anotações biológicas</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.ncbi.nlm.nih.gov/gene/860/"><img data-src="img/annot.png" class="quarto-figure quarto-figure-center" alt="Anotações relacionadas ao gene RUNX2."></a></p>
+</figure>
+</div>
+<figcaption>Anotações relacionadas ao gene RUNX2.</figcaption>
+</figure>
+</div>
+</section>
+<section id="anotações-biológicas-1" class="slide level2">
+<h2>Anotações biológicas</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="images/marshall.jpg" width="300"></p>
+<figcaption>Eu.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p>Nome: <code>Marcel Ferreira</code>;</p></li>
+<li><p>CPF: <code>123.456.789-0</code>;</p></li>
+<li><p>Passaporte: <code>XXXXXXX</code>;</p></li>
+<li><p>RA: <code>PAT123456</code>;</p></li>
+<li><p>Username: <code>marceelrf</code>;</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="convenção-de-nomes-de-genes" class="slide level2">
+<h2>Convenção de nomes de genes</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.genenames.org/"><img data-src="img/HGNC.png" class="quarto-figure quarto-figure-center" alt="https://www.genenames.org/"></a></p>
+</figure>
+</div>
+<figcaption>https://www.genenames.org/</figcaption>
+</figure>
+</div>
+</section>
+<section id="convenção-de-nomes-de-genes-1" class="slide level2">
+<h2>Convenção de nomes de genes</h2>
+
+<img data-src="img/nature1.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="lewis2021">(<a href="#/referências" role="doc-biblioref" onclick="">Lewis 2021</a>)</span></p></section>
+<section id="convenção-de-nomes-de-genes-2" class="slide level2">
+<h2>Convenção de nomes de genes</h2>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><a href="https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates"><img data-src="img/Imagem5.png" class="quarto-figure quarto-figure-left" alt="HGNC alterou nomes de genes."></a></p>
+</figure>
+</div>
+<figcaption>HGNC alterou nomes de genes.</figcaption>
+</figure>
+</div>
+</div><div class="column smaller" style="width:35%;">
+<ul>
+<li>MARCH1 -&gt; MARCHF1</li>
+</ul>
+<p><br></p>
+<ul>
+<li>SEPT1 -&gt; SEPTIN1</li>
+</ul>
+<p><br></p>
+<ul>
+<li>OCT4* // POU5F1</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="bancos-de-dados" class="slide level2">
+<h2>Bancos de dados</h2>
+
+<img data-src="img/consorcios_db.png" width="700" class="r-stretch quarto-figure-center"><p class="caption">Consórcios de bases de dados</p></section></section>
+<section>
+<section id="formato-de-dados" class="title-slide slide level1 center">
+<h1>Formato de dados</h1>
+
+</section>
+<section id="formato-de-dados-1" class="slide level2">
+<h2>Formato de dados</h2>
+</section>
+<section id="fluxograma" class="slide level2">
+<h2>Fluxograma</h2>
+
+<img data-src="img/mermaid-diagram-2024-09-07-161358.svg" class="r-stretch"></section>
+<section id="dados-de-sequenciamento-de-dnarna" class="slide level2">
+<h2>Dados de sequenciamento de DNA/RNA</h2>
+<p>Arquivo FASTQ:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>@SEQ_ID1
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
++
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF&gt;&gt;&gt;&gt;&gt;&gt;CCCCCCC65
+@SEQ_ID2
+CGGAAGAACAGGCAACCTAAGCACAATCGGTATTGTCCGAATGTGGAACGGCTTACAGTC
++
+@:D4B2B82:IH':&lt;*)27)13+HF&lt;(6H654".2CC&amp;&amp;DI,.E?@-*:+&lt;+6++;$G$6</code></pre>
+</div>
+</div>
+</section>
+<section id="biologia-sistêmica" class="slide level2">
+<h2>Biologia sistêmica</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://omicscouts.com/en/disease-and-systems-biology.html"><img data-src="https://omicscouts.com/media/files/blockcontent/2016-09/SystemsBiology.jpg" class="quarto-figure quarto-figure-center" width="600" alt="Biologia sistêmica ."></a></p>
+</figure>
+</div>
+<figcaption>Biologia sistêmica .</figcaption>
+</figure>
+</div>
+</section>
+<section id="kegg" class="slide level2">
+<h2>KEGG</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><a href="https://www.genome.jp/kegg/pathway.html"><img data-src="https://www.genome.jp/Fig/kegg128.gif" class="quarto-figure quarto-figure-left" width="250" alt="Enciclopédia de Genes e Genomas de Kioto"></a></p>
+</figure>
+</div>
+<figcaption>Enciclopédia de Genes e Genomas de Kioto</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:70%;">
+
+</div>
+</div>
+</section>
+<section id="kegg-1" class="slide level2">
+<h2>KEGG</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.kegg.jp/pathway/map04910"><img data-src="img/kegg_insulin.png" class="quarto-figure quarto-figure-center" width="750" alt="Via de insulina (map04910)."></a></p>
+</figure>
+</div>
+<figcaption>Via de insulina (map04910).</figcaption>
+</figure>
+</div>
+</section>
+<section id="gene-ontology" class="slide level2">
+<h2>Gene Ontology</h2>
+</section>
+<section id="redes-de-sinalização" class="slide level2">
+<h2>Redes de sinalização</h2>
+
+<img data-src="img/cytoscape.png" width="700" class="r-stretch quarto-figure-center"><p class="caption">Redes de sinalização <span class="citation" data-cites="lemesdossantossanna2024 shannon2003">(<a href="#/referências" role="doc-biblioref" onclick="">Lemes dos Santos Sanna et al. 2024</a>; <a href="#/referências" role="doc-biblioref" onclick="">Shannon et al. 2003</a>)</span>.</p></section>
+<section id="vias-de-sinalização" class="slide level2">
+<h2>Vias de sinalização</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://signor.uniroma2.it/"><img data-src="img/signor.png" width="900" alt="Vias de sinalização: signor ."></a></p>
+<figcaption>Vias de sinalização: signor .</figcaption>
+</figure>
+</div>
+</section>
+<section id="over-representation-analysis-ora" class="slide level2">
+<h2><strong>Over Representation Analysis (ORA)</strong></h2>
+<ul>
+<li><p>Abordagem amplamente utilizada para determinar se funções ou processos biológicos conhecidos estão super-representados (= enriquecidos) em uma lista de genes derivados de experimentos, por exemplo, uma lista de genes diferencialmente expressos (DEGs);</p></li>
+<li><p>O valor de p pode ser calculado pela distribuição hipergeométrica <span class="citation" data-cites="boyle2004 yu2012 wu2021">(<a href="#/referências" role="doc-biblioref" onclick="">Boyle et al. 2004</a>; <a href="#/referências" role="doc-biblioref" onclick="">Yu et al. 2012</a>; <a href="#/referências" role="doc-biblioref" onclick="">Wu et al. 2021b</a>)</span>;</p></li>
+</ul>
+</section>
+<section id="over-representation-analysis-ora-1" class="slide level2 smaller">
+<h2><strong>Over Representation Analysis (ORA)</strong></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br></p>
+<p><span class="math display">\[
+p = 1-\sum_{i=0}^{k-1}{\frac{\binom{M}{i}\binom{N-M}{n-i}}{\binom{N}{n}}}
+\]</span></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p><code>N</code> é o número total de genes;</p></li>
+<li><p><code>M</code> é o número de genes que são anotados;</p></li>
+<li><p><code>n</code> é o tamanho da lista de interesse;</p></li>
+<li><p><code>k</code> é o número de genes nessa lista que são anotados para o conjunto de genes;</p></li>
+</ul>
+<p><br></p>
+<ul>
+<li><code>{clusterProfiler}</code> automatiza essa análise <span class="citation" data-cites="clusterProfiler">(<a href="#/referências" role="doc-biblioref" onclick="">Wu et al. 2021a</a>)</span>;</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="over-representation-analysis-ora-2" class="slide level2 smaller">
+<h2><strong>Over Representation Analysis (ORA)</strong></h2>
+<p><strong>Exemplo</strong>: Suponhamos que temos 17.980 genes detectados em um estudo de microarray e 57 genes foram expressos diferencialmente. Entre os genes diferencialmente expressos, 28 são anotados em um conjunto de genes;</p>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Definir</a></li><li><a href="#tabset-1-2">Calcular</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a>d <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">gene.not.interest=</span><span class="fu">c</span>(<span class="dv">2613</span>, <span class="dv">15310</span>), <span class="at">gene.in.interest=</span><span class="fu">c</span>(<span class="dv">28</span>, <span class="dv">29</span>))</span>
+<span id="cb2-2"><a href=""></a><span class="fu">row.names</span>(d) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"In_category"</span>, <span class="st">"not_in_category"</span>)</span>
+<span id="cb2-3"><a href=""></a>d</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                gene.not.interest gene.in.interest
+In_category                  2613               28
+not_in_category             15310               29</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="fu">fisher.test</span>(d, <span class="at">alternative =</span> <span class="st">"greater"</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Fisher's Exact Test for Count Data
+
+data:  d
+p-value = 1
+alternative hypothesis: true odds ratio is greater than 1
+95 percent confidence interval:
+ 0.110242      Inf
+sample estimates:
+odds ratio 
+ 0.1767937 </code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="gene-set-enrichment-analysis-gsea" class="slide level2">
+<h2>Gene Set Enrichment Analysis (GSEA)</h2>
+</section>
+<section id="gene-set-variation-analysis-gsva" class="slide level2">
+<h2>Gene Set Variation Analysis (GSVA)</h2>
+</section></section>
+<section>
+<section id="trabalhos" class="title-slide slide level1 center">
+<h1>Trabalhos</h1>
+
+</section>
+<section id="epigenética-e-fenotipagem-forense-por-dna---long-reads-sequencing" class="slide level2">
+<h2>Epigenética e fenotipagem forense por DNA - <em>Long reads sequencing</em></h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2021.708222/full"><img data-src="img/forense.png" alt="Usos forense do DNA (Gurkan, Bulbul, e Kidd 2021)."></a></p>
+<figcaption>Usos forense do DNA <span class="citation" data-cites="gurkan2021">(<a href="#/referências" role="doc-biblioref" onclick="">Gurkan, Bulbul, e Kidd 2021</a>)</span>.</figcaption>
+</figure>
+</div>
+</section>
+<section id="epigenética-e-fenotipagem-forense-por-dna" class="slide level2">
+<h2>Epigenética e fenotipagem forense por DNA</h2>
+
+<img data-src="img/strs.png" class="r-stretch quarto-figure-center"><p class="caption">STR - Microsatalites</p></section>
+<section id="epigenética-e-fenotipagem-forense-por-dna-1" class="slide level2">
+<h2>Epigenética e fenotipagem forense por DNA</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.nature.com/articles/s41587-021-01108-x"><img data-src="img/Imagem8.jpg" class="quarto-figure quarto-figure-center" alt="Sequenciamento Oxford Nanopore" width="515"></a></p>
+</figure>
+</div>
+<figcaption>Sequenciamento Oxford Nanopore <span class="citation" data-cites="wang2021">(<a href="#/referências" role="doc-biblioref" onclick="">Wang et al. 2021</a>)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="epigenética-e-fenotipagem-forense-por-dna-2" class="slide level2">
+<h2>Epigenética e fenotipagem forense por DNA</h2>
+
+<img data-src="img/short_long.png" class="r-stretch quarto-figure-center"><p class="caption">Comparação de sequenciamento de leituras curtas e longas.</p></section>
+<section id="biomateriais-e-remodelamento-ósseo" class="slide level2">
+<h2>Biomateriais e remodelamento ósseo</h2>
+
+<img data-src="img/remodelamento.png" class="r-stretch quarto-figure-center"><p class="caption">Remodelamento ósseo.</p></section>
+<section id="biomateriais-e-remodelamento-ósseo-1" class="slide level2">
+<h2>Biomateriais e remodelamento ósseo</h2>
+
+<img data-src="img/regeneracaoOssea.jpeg" width="800" class="r-stretch quarto-figure-center"><p class="caption">Fatores de crescimento.</p></section>
+<section id="desafios-para-uso-de-bioinformática" class="slide level2">
+<h2>Desafios para uso de bioinformática</h2>
+<ul>
+<li>Característica do tecido ósseo;</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Poucos conjuntos de dados disponíveis sobre interação com biomateriais;</li>
+</ul>
+</section>
+<section id="osteoblast" class="slide level2 smaller">
+<h2>OsteoBLAST</h2>
+<ul>
+<li><p>Projeto de mestrado;</p></li>
+<li><p>Busca por um método alternativo para uso de animais;</p></li>
+<li><p>Baseado em fosforilação de proteínas;</p></li>
+<li><p>Microarray de peptídeos (PamChip);</p>
+<p><span class="math display">\[
+\chi = \sqrt{\frac{1}{N}\sum_{i=1}^N{(\frac{A_1[i] - A_2[i]}{1-|\sigma_1[i]-\sigma_2[i]|})^2}}
+\]</span></p></li>
+</ul>
+</section>
+<section id="osteoblast-1" class="slide level2">
+<h2>OsteoBLAST</h2>
+
+<img data-src="img/OsteoBLAST.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="osteoblast---gsva-scores" class="slide level2">
+<h2>OsteoBLAST - GSVA scores</h2>
+</section>
+<section id="osteoclust" class="slide level2">
+<h2>OsteoCLUST</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/Matheus.jpeg" width="300"></p>
+<figcaption>Matheus Amaral Silva</figcaption>
+</figure>
+</div>
+</div><div class="column">
+<ul>
+<li><p>Busca por métodos para classificação de biomateriais ósseos;</p></li>
+<li><p>Utiliza escores biológicos como: GSEA e GSVA;</p></li>
+<li><p>Aprendizado não supervisionado;</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="biomimética" class="slide level2 smaller">
+<h2>Biomimética</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/julia.jpeg" width="354"></p>
+<figcaption>Julia Ferreira de Moraes</figcaption>
+</figure>
+</div>
+</div><div class="column">
+<ul>
+<li>“Construção de unidades biomiméticas a partir de plasma rico em plaquetas associado ao fluído caótico utilizando misturadores estáticos: perspectivas de novos processos biotecnológicos para regeneração do tecido ósseo”.<br>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="biomimética-1" class="slide level2 smaller">
+<h2>Biomimética</h2>
+<div class="columns">
+<div class="column">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/julia.jpeg" width="354"></p>
+<figcaption>Julia Ferreira de Moraes</figcaption>
+</figure>
+</div>
+</div><div class="column">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/fluxoCaotico.png" width="750"></p>
+<figcaption>Fluxo caótico <span class="citation" data-cites="chávez-madero2020">(<a href="#/referências" role="doc-biblioref" onclick="">Chávez-Madero et al. 2020</a>)</span>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="referências" class="slide level2 smaller scrollable">
+<h2>Referências</h2>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>ferreiramr_phd</p>
@@ -522,6 +1074,38 @@ eyJjb250ZW50cyI6W119
 <script type="vfs-file">
 W10=
 </script>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-boyle2004" class="csl-entry" role="listitem">
+Boyle, Elizabeth I., Shuai Weng, Jeremy Gollub, Heng Jin, David Botstein, J. Michael Cherry, e Gavin Sherlock. 2004. <span>“GO::TermFinder<span></span>open Source Software for Accessing Gene Ontology Information and Finding Significantly Enriched Gene Ontology Terms Associated with a List of Genes”</span>. <em>Bioinformatics</em> 20 (18): 3710–15. <a href="https://doi.org/10.1093/bioinformatics/bth456">https://doi.org/10.1093/bioinformatics/bth456</a>.
+</div>
+<div id="ref-chávez-madero2020" class="csl-entry" role="listitem">
+Chávez-Madero, Carolina, María Díaz de León-Derby, Mohamadmahdi Samandari, Carlos Fernando Ceballos-González, Edna Johana Bolívar-Monsalve, Christian Mendoza-Buenrostro, Sunshine Holmberg, et al. 2020. <span>“Using chaotic advection for facile high-throughput fabrication of ordered multilayer micro- and nanostructures: continuous chaotic printing”</span>. <em>Biofabrication</em> 12 (3): 035023. <a href="https://doi.org/10.1088/1758-5090/ab84cc">https://doi.org/10.1088/1758-5090/ab84cc</a>.
+</div>
+<div id="ref-gurkan2021" class="csl-entry" role="listitem">
+Gurkan, Cemal, Ozlem Bulbul, e Kenneth K. Kidd. 2021. <span>“Editorial: Current and Emerging Trends in Human Identification and Molecular Anthropology”</span>. <em>Frontiers in Genetics</em> 12 (junho). <a href="https://doi.org/10.3389/fgene.2021.708222">https://doi.org/10.3389/fgene.2021.708222</a>.
+</div>
+<div id="ref-lemesdossantossanna2024" class="csl-entry" role="listitem">
+Lemes dos Santos Sanna, Paula, Liebert Bernardes Carvalho, Camila Cristina dos Santos Afonso, Kassia de Carvalho, Rogério Aires, Jennyffer Souza, Marcel Rodrigues Ferreira, et al. 2024. <span>“Adora2A Downregulation Promotes Caffeine Neuroprotective Effect Against LPS-Induced Neuroinflammation in the Hippocampus”</span>. <em>Brain Research</em> 1833 (junho): 148866. <a href="https://doi.org/10.1016/j.brainres.2024.148866">https://doi.org/10.1016/j.brainres.2024.148866</a>.
+</div>
+<div id="ref-lewis2021" class="csl-entry" role="listitem">
+Lewis, Dyani. 2021. <span>“Autocorrect Errors in Excel Still Creating Genomics Headache”</span>. <em>Nature</em>, agosto. <a href="https://doi.org/10.1038/d41586-021-02211-4">https://doi.org/10.1038/d41586-021-02211-4</a>.
+</div>
+<div id="ref-shannon2003" class="csl-entry" role="listitem">
+Shannon, Paul, Andrew Markiel, Owen Ozier, Nitin S. Baliga, Jonathan T. Wang, Daniel Ramage, Nada Amin, Benno Schwikowski, e Trey Ideker. 2003. <span>“Cytoscape: A Software Environment for Integrated Models of Biomolecular Interaction Networks”</span>. <em>Genome Research</em> 13 (11): 2498–2504. <a href="https://doi.org/10.1101/gr.1239303">https://doi.org/10.1101/gr.1239303</a>.
+</div>
+<div id="ref-wang2021" class="csl-entry" role="listitem">
+Wang, Yunhao, Yue Zhao, Audrey Bollas, Yuru Wang, e Kin Fai Au. 2021. <span>“Nanopore Sequencing Technology, Bioinformatics and Applications”</span>. <em>Nature Biotechnology</em> 39 (11): 1348–65. <a href="https://doi.org/10.1038/s41587-021-01108-x">https://doi.org/10.1038/s41587-021-01108-x</a>.
+</div>
+<div id="ref-clusterProfiler" class="csl-entry" role="listitem">
+Wu, Tianzhi, Erqiang Hu, Shuangbin Xu, Meijun Chen, Pingfan Guo, Zehan Dai, Tingze Feng, et al. 2021a. <span>“clusterProfiler 4.0: A universal enrichment tool for interpreting omics data”</span> 2: 100141. <a href="https://doi.org/10.1016/j.xinn.2021.100141">https://doi.org/10.1016/j.xinn.2021.100141</a>.
+</div>
+<div id="ref-wu2021" class="csl-entry" role="listitem">
+Wu, Tianzhi, Erqiang Hu, Shuangbin Xu, Meijun Chen, Pingfan Guo, Zehan Dai, Tingze Feng, et al. 2021b. <span>“clusterProfiler 4.0: A Universal Enrichment Tool for Interpreting Omics Data”</span>. <em>The Innovation</em> 2 (3): 100141. <a href="https://doi.org/10.1016/j.xinn.2021.100141">https://doi.org/10.1016/j.xinn.2021.100141</a>.
+</div>
+<div id="ref-yu2012" class="csl-entry" role="listitem">
+Yu, Guangchuang, Li-Gen Wang, Yanyan Han, e Qing-Yu He. 2012. <span>“clusterProfiler: An R Package for Comparing Biological Themes Among Gene Clusters”</span>. <em>OMICS: A Journal of Integrative Biology</em> 16 (5): 284–87. <a href="https://doi.org/10.1089/omi.2011.0118">https://doi.org/10.1089/omi.2011.0118</a>.
+</div>
+</div>
 </section></section>
     </div>
   </div>

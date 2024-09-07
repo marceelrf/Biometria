@@ -1,0 +1,4 @@
+- source: Press.qmd
+  quarto-pub:
+    - id: ac6a2ed3-3d30-4f6b-896d-1e31748389d8
+      url: 'https://marceelrf.quarto.pub/biometria'
