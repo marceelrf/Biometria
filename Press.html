@@ -768,14 +768,29 @@ Marcel Ferreira
 </section>
 <section id="formato-de-dados-1" class="slide level2">
 <h2>Formato de dados</h2>
+<ul>
+<li><p>Sequências (Texto);</p></li>
+<li><p>Alinhamentos (Tabelas);</p></li>
+<li><p>Expressão (Números);</p></li>
+<li><p>Interações (Redes);</p></li>
+<li><p>Estruturas 3D (Coordenadas);</p></li>
+</ul>
 </section>
 <section id="fluxograma" class="slide level2">
 <h2>Fluxograma</h2>
 
 <img data-src="img/mermaid-diagram-2024-09-07-161358.svg" class="r-stretch"></section>
+<section id="fluxograma-1" class="slide level2">
+<h2>Fluxograma</h2>
+
+<img data-src="img/RNAseqMappingAssembly2.png" class="r-stretch quarto-figure-center"><p class="caption">Exemplo RNAseq</p></section>
+<section id="fluxograma-2" class="slide level2">
+<h2>Fluxograma</h2>
+
+<img data-src="img/RNAseqMappingAssembly.png" class="r-stretch quarto-figure-center"><p class="caption">Exemplo RNAseq <span class="citation" data-cites="haas2010">(<a href="#/referências" role="doc-biblioref" onclick="">Haas e Zody 2010</a>)</span>.</p></section>
 <section id="dados-de-sequenciamento-de-dnarna" class="slide level2">
 <h2>Dados de sequenciamento de DNA/RNA</h2>
-<p>Arquivo FASTQ:</p>
+<p>Arquivo <code>FASTQ</code>:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>@SEQ_ID1
@@ -787,6 +802,73 @@ CGGAAGAACAGGCAACCTAAGCACAATCGGTATTGTCCGAATGTGGAACGGCTTACAGTC
 +
 @:D4B2B82:IH':&lt;*)27)13+HF&lt;(6H654".2CC&amp;&amp;DI,.E?@-*:+&lt;+6++;$G$6</code></pre>
 </div>
+</div>
+</section>
+<section id="dados-de-sequenciamento-de-dnarna-1" class="slide level2">
+<h2>Dados de sequenciamento de DNA/RNA</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://drive5.com/usearch/manual/quality_score.html"><img data-src="img/ascii.png" alt="Tabela ASCII"></a></p>
+<figcaption>Tabela ASCII</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<p><span class="math display">\[
+Q_{score} = - 10\log_{10}{P_{error}}
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="dados-de-alinhamento" class="slide level2 smaller">
+<h2>Dados de alinhamento</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<ul>
+<li><p>Formato <code>SAM</code>/<code>BAM</code> <span class="citation" data-cites="li2009">(<a href="#/referências" role="doc-biblioref" onclick="">Li et al. 2009</a>)</span>;</p></li>
+<li><p>Cabeçalho com metadados;</p></li>
+<li><p>Arquivo tabular com 11 colunas obrigatórias;</p>
+<ul>
+<li><p><strong>QNAME (Query template NAME)</strong>: Nome ou identificador do read, usado para rastrear a sequência de consulta;</p></li>
+<li><p><strong>FLAG</strong>: Código numérico que descreve propriedades do read (por exemplo, se está alinhado, se é parte de um par, etc.);</p></li>
+<li><p><strong>RNAME (Reference sequence NAME)</strong>: Nome da sequência de referência (ex. cromossomo ou contig) à qual o read foi alinhado;</p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>POS (Position)</strong>: Posição inicial do alinhamento no genoma de referência (base 1);</p></li>
+<li><p><strong>CIGAR</strong>: Descrição do alinhamento, indicando como o read se relaciona com a sequência de referência (por exemplo, match, inserções, deleções).</p></li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:20%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="http://liheng.org/"><img data-src="img/hengli.jfif" class="quarto-figure quarto-figure-center" alt="Heng Li"></a></p>
+</figure>
+</div>
+<figcaption>Heng Li</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="redes-de-correlação" class="slide level2">
+<h2>Redes de correlação</h2>
+
+<img data-src="img/correlation_net.png" width="1200" class="r-stretch quarto-figure-center"><p class="caption">Construção de redes de correlação</p></section>
+<section id="redes-de-sinalização" class="slide level2">
+<h2>Redes de sinalização</h2>
+
+<img data-src="img/cytoscape.png" width="700" class="r-stretch quarto-figure-center"><p class="caption">Redes de sinalização <span class="citation" data-cites="lemesdossantossanna2024 shannon2003">(<a href="#/referências" role="doc-biblioref" onclick="">Lemes dos Santos Sanna et al. 2024</a>; <a href="#/referências" role="doc-biblioref" onclick="">Shannon et al. 2003</a>)</span>.</p></section>
+<section id="vias-de-sinalização" class="slide level2">
+<h2>Vias de sinalização</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://signor.uniroma2.it/"><img data-src="img/signor.png" width="900" alt="Vias de sinalização: signor ."></a></p>
+<figcaption>Vias de sinalização: signor .</figcaption>
+</figure>
 </div>
 </section>
 <section id="biologia-sistêmica" class="slide level2">
@@ -801,6 +883,16 @@ CGGAAGAACAGGCAACCTAAGCACAATCGGTATTGTCCGAATGTGGAACGGCTTACAGTC
 <figcaption>Biologia sistêmica .</figcaption>
 </figure>
 </div>
+</section>
+<section id="biologia-sistêmica-1" class="slide level2">
+<h2>Biologia sistêmica</h2>
+<ul>
+<li><p>Estudo das interações e do comportamento dos componentes de entidades biológicas, incluindo moléculas, células, órgãos e organismos;</p>
+<p><br></p></li>
+</ul>
+<blockquote>
+<p>“O todo é maior que a soma das partes”</p>
+</blockquote>
 </section>
 <section id="kegg" class="slide level2">
 <h2>KEGG</h2>
@@ -817,7 +909,12 @@ CGGAAGAACAGGCAACCTAAGCACAATCGGTATTGTCCGAATGTGGAACGGCTTACAGTC
 </figure>
 </div>
 </div><div class="column" style="width:70%;">
-
+<ul>
+<li><p>Coleção de bancos de dados on-line;</p></li>
+<li><p>Genoma;</p></li>
+<li><p>Vias metabólicas;</p></li>
+<li><p>Substâncias químicas biológicas.</p></li>
+</ul>
 </div>
 </div>
 </section>
@@ -836,19 +933,11 @@ CGGAAGAACAGGCAACCTAAGCACAATCGGTATTGTCCGAATGTGGAACGGCTTACAGTC
 </section>
 <section id="gene-ontology" class="slide level2">
 <h2>Gene Ontology</h2>
-</section>
-<section id="redes-de-sinalização" class="slide level2">
-<h2>Redes de sinalização</h2>
+</section></section>
+<section>
+<section id="escores-biológicos" class="title-slide slide level1 center">
+<h1>Escores biológicos</h1>
 
-<img data-src="img/cytoscape.png" width="700" class="r-stretch quarto-figure-center"><p class="caption">Redes de sinalização <span class="citation" data-cites="lemesdossantossanna2024 shannon2003">(<a href="#/referências" role="doc-biblioref" onclick="">Lemes dos Santos Sanna et al. 2024</a>; <a href="#/referências" role="doc-biblioref" onclick="">Shannon et al. 2003</a>)</span>.</p></section>
-<section id="vias-de-sinalização" class="slide level2">
-<h2>Vias de sinalização</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://signor.uniroma2.it/"><img data-src="img/signor.png" width="900" alt="Vias de sinalização: signor ."></a></p>
-<figcaption>Vias de sinalização: signor .</figcaption>
-</figure>
-</div>
 </section>
 <section id="over-representation-analysis-ora" class="slide level2">
 <h2><strong>Over Representation Analysis (ORA)</strong></h2>
@@ -930,6 +1019,13 @@ odds ratio
 </section>
 <section id="gene-set-enrichment-analysis-gsea-1" class="slide level2">
 <h2>Gene Set Enrichment Analysis (GSEA)</h2>
+<div class="columns">
+<div class="column">
+
+</div><div class="column">
+
+</div>
+</div>
 </section>
 <section id="gene-set-variation-analysis-gsva" class="slide level2">
 <h2>Gene Set Variation Analysis (GSVA)</h2>
@@ -947,10 +1043,10 @@ odds ratio
 <figure>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-7/figures/1"><img data-src="img/12859_2012_Article_5762_Fig1_HTML.webp" class="quarto-figure quarto-figure-center" width="1200" alt="GSVA outline (Hänzelmann, Castelo, e Guinney 2013)."></a></p>
+<p><a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-7/figures/1"><img data-src="img/12859_2012_Article_5762_Fig1_HTML.webp" class="quarto-figure quarto-figure-center" width="1200" alt="GSVA outline ."></a></p>
 </figure>
 </div>
-<figcaption>GSVA outline <span class="citation" data-cites="hänzelmann2013">(<a href="#/referências" role="doc-biblioref" onclick="">Hänzelmann, Castelo, e Guinney 2013</a>)</span>.</figcaption>
+<figcaption>GSVA outline .</figcaption>
 </figure>
 </div>
 </section></section>
@@ -1114,6 +1210,9 @@ Boyle, Elizabeth I., Shuai Weng, Jeremy Gollub, Heng Jin, David Botstein, J. Mic
 <div id="ref-chávez-madero2020" class="csl-entry" role="listitem">
 Chávez-Madero, Carolina, María Díaz de León-Derby, Mohamadmahdi Samandari, Carlos Fernando Ceballos-González, Edna Johana Bolívar-Monsalve, Christian Mendoza-Buenrostro, Sunshine Holmberg, et al. 2020. <span>“Using chaotic advection for facile high-throughput fabrication of ordered multilayer micro- and nanostructures: continuous chaotic printing”</span>. <em>Biofabrication</em> 12 (3): 035023. <a href="https://doi.org/10.1088/1758-5090/ab84cc">https://doi.org/10.1088/1758-5090/ab84cc</a>.
 </div>
+<div id="ref-haas2010" class="csl-entry" role="listitem">
+Haas, Brian J, e Michael C Zody. 2010. <span>“Advancing RNA-Seq Analysis”</span>. <em>Nature Biotechnology</em> 28 (5): 421–23. <a href="https://doi.org/10.1038/nbt0510-421">https://doi.org/10.1038/nbt0510-421</a>.
+</div>
 <div id="ref-hänzelmann2013" class="csl-entry" role="listitem">
 Hänzelmann, Sonja, Robert Castelo, e Justin Guinney. 2013. <span>“GSVA: Gene Set Variation Analysis for Microarray and RNA-Seq Data”</span>. <em>BMC Bioinformatics</em> 14 (1). <a href="https://doi.org/10.1186/1471-2105-14-7">https://doi.org/10.1186/1471-2105-14-7</a>.
 </div>
@@ -1122,6 +1221,9 @@ Lemes dos Santos Sanna, Paula, Liebert Bernardes Carvalho, Camila Cristina dos S
 </div>
 <div id="ref-lewis2021" class="csl-entry" role="listitem">
 Lewis, Dyani. 2021. <span>“Autocorrect Errors in Excel Still Creating Genomics Headache”</span>. <em>Nature</em>, agosto. <a href="https://doi.org/10.1038/d41586-021-02211-4">https://doi.org/10.1038/d41586-021-02211-4</a>.
+</div>
+<div id="ref-li2009" class="csl-entry" role="listitem">
+Li, Heng, Bob Handsaker, Alec Wysoker, Tim Fennell, Jue Ruan, Nils Homer, Gabor Marth, Goncalo Abecasis, e Richard Durbin. 2009. <span>“The Sequence Alignment/Map Format and SAMtools”</span>. <em>Bioinformatics</em> 25 (16): 2078–79. <a href="https://doi.org/10.1093/bioinformatics/btp352">https://doi.org/10.1093/bioinformatics/btp352</a>.
 </div>
 <div id="ref-mootha2003" class="csl-entry" role="listitem">
 Mootha, Vamsi K, Cecilia M Lindgren, Karl-Fredrik Eriksson, Aravind Subramanian, Smita Sihag, Joseph Lehar, Pere Puigserver, et al. 2003. <span>“PGC-1α-Responsive Genes Involved in Oxidative Phosphorylation Are Coordinately Downregulated in Human Diabetes”</span>. <em>Nature Genetics</em> 34 (3): 267–73. <a href="https://doi.org/10.1038/ng1180">https://doi.org/10.1038/ng1180</a>.

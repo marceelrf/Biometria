@@ -282,21 +282,102 @@ SMILES:
 
 ## Formato de dados
 
+-   Sequências (Texto);
+
+-   Alinhamentos (Tabelas);
+
+-   Expressão (Números);
+
+-   Interações (Redes);
+
+-   Estruturas 3D (Coordenadas);
+
 ## Fluxograma
 
 ![](img/mermaid-diagram-2024-09-07-161358.svg)
 
+## Fluxograma
+
+![Exemplo RNAseq](img/RNAseqMappingAssembly2.png){fig-align="center"}
+
+## Fluxograma
+
+![Exemplo RNAseq [@haas2010].](img/RNAseqMappingAssembly.png)
+
 ## Dados de sequenciamento de DNA/RNA
 
-Arquivo FASTQ:
+Arquivo `FASTQ`:
 
 ```{r, echo=F}
 cat("@SEQ_ID1\nGATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT\n+\n!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF>>>>>>CCCCCCC65\n@SEQ_ID2\nCGGAAGAACAGGCAACCTAAGCACAATCGGTATTGTCCGAATGTGGAACGGCTTACAGTC\n+\n@:D4B2B82:IH':<*)27)13+HF<(6H654\".2CC&&DI,.E?@-*:+<+6++;$G$6")
 ```
 
+## Dados de sequenciamento de DNA/RNA
+
+::: columns
+::: {.column width="60%"}
+[![Tabela ASCII](img/ascii.png)](https://drive5.com/usearch/manual/quality_score.html)
+:::
+
+::: {.column width="40%"}
+$$
+Q_{score} = - 10\log_{10}{P_{error}} 
+$$
+:::
+:::
+
+## Dados de alinhamento {.smaller}
+
+::: columns
+::: {.column width="80%"}
+-   Formato `SAM`/`BAM` [@li2009];
+
+-   Cabeçalho com metadados;
+
+-   Arquivo tabular com 11 colunas obrigatórias;
+
+    -   **QNAME (Query template NAME)**: Nome ou identificador do read, usado para rastrear a sequência de consulta;
+
+    -   **FLAG**: Código numérico que descreve propriedades do read (por exemplo, se está alinhado, se é parte de um par, etc.);
+
+    -   **RNAME (Reference sequence NAME)**: Nome da sequência de referência (ex. cromossomo ou contig) à qual o read foi alinhado;
+
+    ```{=html}
+    <!-- -->
+    ```
+    -   **POS (Position)**: Posição inicial do alinhamento no genoma de referência (base 1);
+
+    -   **CIGAR**: Descrição do alinhamento, indicando como o read se relaciona com a sequência de referência (por exemplo, match, inserções, deleções).
+:::
+
+::: {.column width="20%"}
+[![Heng Li](img/hengli.jfif){fig-align="center"}](http://liheng.org/)
+:::
+:::
+
+## Redes de correlação
+
+![Construção de redes de correlação](img/correlation_net.png){fig-align="center" width="1200"}
+
+## Redes de sinalização
+
+![Redes de sinalização [@lemesdossantossanna2024; @shannon2003].](img/cytoscape.png){fig-align="center" width="700"}
+
+## Vias de sinalização
+
+[![Vias de sinalização: signor .](img/signor.png){width="900"}](https://signor.uniroma2.it/)
+
 ## Biologia sistêmica
 
 [![Biologia sistêmica .](https://omicscouts.com/media/files/blockcontent/2016-09/SystemsBiology.jpg){fig-align="center" width="600"}](https://omicscouts.com/en/disease-and-systems-biology.html)
+
+## Biologia sistêmica
+
+-   Estudo das interações e do comportamento dos componentes de entidades biológicas, incluindo moléculas, células, órgãos e organismos;
+
+    <br>
+
+> "O todo é maior que a soma das partes"
 
 ## KEGG
 
@@ -306,6 +387,13 @@ cat("@SEQ_ID1\nGATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT\n+\n
 :::
 
 ::: {.column width="70%"}
+-   Coleção de bancos de dados on-line;
+
+-   Genoma;
+
+-   Vias metabólicas;
+
+-   Substâncias químicas biológicas.
 :::
 :::
 
@@ -315,13 +403,7 @@ cat("@SEQ_ID1\nGATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT\n+\n
 
 ## Gene Ontology
 
-## Redes de sinalização
-
-![Redes de sinalização [@lemesdossantossanna2024; @shannon2003].](img/cytoscape.png){fig-align="center" width="700"}
-
-## Vias de sinalização
-
-[![Vias de sinalização: signor .](img/signor.png){width="900"}](https://signor.uniroma2.it/)
+# Escores biológicos
 
 ## **Over Representation Analysis (ORA)**
 
@@ -387,6 +469,14 @@ fisher.test(d, alternative = "greater")
 
 ## Gene Set Enrichment Analysis (GSEA)
 
+::: columns
+::: column
+:::
+
+::: column
+:::
+:::
+
 ## Gene Set Variation Analysis (GSVA)
 
 -   Método não paramétrico e não supervisionado para estimar a variação do enriquecimento do conjunto de genes por meio de amostras de um conjunto de dados de expressão;
@@ -397,7 +487,7 @@ fisher.test(d, alternative = "greater")
 
 ## Gene Set Variation Analysis (GSVA)
 
-[![GSVA outline [@hänzelmann2013].](img/12859_2012_Article_5762_Fig1_HTML.webp){fig-align="center" width="1200"}](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-7/figures/1)
+[![GSVA outline .](img/12859_2012_Article_5762_Fig1_HTML.webp){fig-align="center" width="1200"}](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-7/figures/1)
 
 # Trabalhos
 
@@ -411,7 +501,7 @@ fisher.test(d, alternative = "greater")
 
 ## Epigenética e fenotipagem forense por DNA
 
-[![Sequenciamento Oxford Nanopore ](img/Imagem8.jpg){alt="Sequenciamento Oxford Nanopore" fig-align="center" width="515"}](https://www.nature.com/articles/s41587-021-01108-x)
+[![Sequenciamento Oxford Nanopore](img/Imagem8.jpg){alt="Sequenciamento Oxford Nanopore" fig-align="center" width="515"}](https://www.nature.com/articles/s41587-021-01108-x)
 
 ## Epigenética e fenotipagem forense por DNA
 
