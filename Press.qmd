@@ -102,7 +102,7 @@ bibliography: references.bib
 
 ## Bioinfomática - Ciência de dados
 
-[![Extraído de Medium Zahra Elhamraoui](https://miro.medium.com/v2/resize:fit:786/format:webp/0*hvg2FSO_6JsSQ5lo){fig-align="center"}](https://medium.com/@zahraelhamraoui1997/data-science-versus-bioinformatics-859a086c8587)
+[![Extraído de Medium Zahra Elhamraoui](img/datascience.png){fig-align="center" width="750"}](https://medium.com/@zahraelhamraoui1997/data-science-versus-bioinformatics-859a086c8587)
 
 # Dados biológicos
 
@@ -342,9 +342,8 @@ $$
 
     -   **RNAME (Reference sequence NAME)**: Nome da sequência de referência (ex. cromossomo ou contig) à qual o read foi alinhado;
 
-    ```{=html}
     <!-- -->
-    ```
+
     -   **POS (Position)**: Posição inicial do alinhamento no genoma de referência (base 1);
 
     -   **CIGAR**: Descrição do alinhamento, indicando como o read se relaciona com a sequência de referência (por exemplo, match, inserções, deleções).
@@ -355,11 +354,19 @@ $$
 :::
 :::
 
+## Dados de alinhamento {.smaller}
+
+[![Exemplo de um arquivo de sequenciamento no IGV .](https://pmbio.org/assets/module_2/igv_exome_tumor_norm_tp53_exome_bed.png){fig-align="center" width="1000"}](https://pmbio.org/module-03-align/0003/04/01/PostAlignment_Visualization/)
+
 ## Redes de correlação
 
 ![Construção de redes de correlação](img/correlation_net.png){fig-align="center" width="1200"}
 
-## Redes de sinalização
+## Redes de interação
+
+[![STRINGdb .](img/ppi_string.png){fig-align="center"}](https://string-db.org/)
+
+## Redes de interação
 
 ![Redes de sinalização [@lemesdossantossanna2024; @shannon2003].](img/cytoscape.png){fig-align="center" width="700"}
 
@@ -383,7 +390,7 @@ $$
 
 ::: columns
 ::: {.column width="30%"}
-[![Enciclopédia de Genes e Genomas de Kioto](https://www.genome.jp/Fig/kegg128.gif){fig-align="left" width="250"}](https://www.genome.jp/kegg/pathway.html)
+[![Enciclopédia de Genes e Genomas de Kioto [@kanehisa2000].](https://www.genome.jp/Fig/kegg128.gif){fig-align="left" width="250"}](https://www.genome.jp/kegg/pathway.html)
 :::
 
 ::: {.column width="70%"}
@@ -402,6 +409,26 @@ $$
 [![Via de insulina (map04910).](img/kegg_insulin.png){fig-align="center" width="750"}](https://www.kegg.jp/pathway/map04910)
 
 ## Gene Ontology
+
+::: columns
+::: {.column width="70%"}
+Sistema de classificação padronizado que descreve as funções de genes e seus produtos em termos de três aspectos principais:
+
+-   **Função molecular**, que descreve as atividades bioquímicas de proteínas e RNA;
+
+-   **Componente celular**, que define onde esses produtos estão localizados nas células;
+
+-   **Processo biológico**, que refere-se às vias e redes de eventos em que os produtos dos genes estão envolvidos
+:::
+
+::: {.column width="30%"}
+[![Gene Ontology.](https://geneontology.org/assets/go-logo.large.png){fig-align="center" width="350"}](https://geneontology.org/)
+:::
+:::
+
+## MSigDB
+
+[![Molecular Signatures Database [@subramanian2005].](img/msigdb.png){fig-align="center"}](https://www.gsea-msigdb.org/gsea/index.jsp)
 
 # Escores biológicos
 
