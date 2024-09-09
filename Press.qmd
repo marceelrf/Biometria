@@ -379,13 +379,31 @@ fisher.test(d, alternative = "greater")
 
 ## Gene Set Enrichment Analysis (GSEA)
 
+-   Método computacional usado para identificar grupos de genes (conjuntos de genes) que exibem padrões de expressão coordenados em diferentes estados biológicos [@subramanian2005; @mootha2003];
+
+<br>
+
+-   É particularmente útil na análise de conjuntos de dados de expressão gênica em larga escala, como os gerados a partir de experimentos de microarray ou RNA-seq;
+
+## Gene Set Enrichment Analysis (GSEA)
+
 ## Gene Set Variation Analysis (GSVA)
+
+-   Método não paramétrico e não supervisionado para estimar a variação do enriquecimento do conjunto de genes por meio de amostras de um conjunto de dados de expressão;
+
+<br>
+
+-   O GSVA [@hänzelmann2013] realiza uma alteração nos sistemas de coordenadas, transformando os dados de uma matriz de gene por amostra em uma matriz de conjunto de genes por amostra, permitindo assim a avaliação do enriquecimento de vias para cada amostra;
+
+## Gene Set Variation Analysis (GSVA)
+
+[![GSVA outline [@hänzelmann2013].](img/12859_2012_Article_5762_Fig1_HTML.webp){fig-align="center" width="1200"}](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-7/figures/1)
 
 # Trabalhos
 
 ## Epigenética e fenotipagem forense por DNA - *Long reads sequencing*
 
-[![Usos forense do DNA [@gurkan2021].](img/forense.png)](https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2021.708222/full)
+[![Usos forense do DNA .](img/forense.png)](https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2021.708222/full)
 
 ## Epigenética e fenotipagem forense por DNA
 
@@ -393,7 +411,7 @@ fisher.test(d, alternative = "greater")
 
 ## Epigenética e fenotipagem forense por DNA
 
-[![Sequenciamento Oxford Nanopore [@wang2021]](img/Imagem8.jpg){alt="Sequenciamento Oxford Nanopore" fig-align="center" width="515"}](https://www.nature.com/articles/s41587-021-01108-x)
+[![Sequenciamento Oxford Nanopore ](img/Imagem8.jpg){alt="Sequenciamento Oxford Nanopore" fig-align="center" width="515"}](https://www.nature.com/articles/s41587-021-01108-x)
 
 ## Epigenética e fenotipagem forense por DNA
 
@@ -432,6 +450,8 @@ fisher.test(d, alternative = "greater")
 ## OsteoBLAST
 
 ![](img/OsteoBLAST.png){fig-align="center"}
+
+## OsteoBLAST - GSVA scores
 
 ## OsteoBLAST - GSVA scores
 
