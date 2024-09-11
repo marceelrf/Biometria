@@ -278,6 +278,24 @@ SMILES:
 
 ![Consórcios de bases de dados](img/consorcios_db.png){fig-align="center" width="700"}
 
+## Anotações biológicas
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| tbl-cap: Exemplos de anotações em diferentes bases
+library(AnnotationDbi)
+library(org.Hs.eg.db)
+
+IDs <- c("860","2064","632","121340")
+
+knitr::kable(select(org.Hs.eg.db,
+       keys = IDs,
+       columns = c("GENENAME","ENTREZID","SYMBOL","ENSEMBL"),
+       keytype = "ENTREZID"))
+```
+
 # Formato de dados
 
 ## Formato de dados
@@ -356,7 +374,7 @@ $$
 
 ## Dados de alinhamento {.smaller}
 
-[![Exemplo de um arquivo de sequenciamento no IGV .](https://pmbio.org/assets/module_2/igv_exome_tumor_norm_tp53_exome_bed.png){fig-align="center" width="1000"}](https://pmbio.org/module-03-align/0003/04/01/PostAlignment_Visualization/)
+[![Exemplo de um arquivo de sequenciamento no IGV .](https://pmbio.org/assets/module_2/igv_exome_tumor_norm_tp53_exome_bed.png){fig-align="center" width="800"}](https://pmbio.org/module-03-align/0003/04/01/PostAlignment_Visualization/)
 
 ## Redes de correlação
 
@@ -390,7 +408,7 @@ $$
 
 ::: columns
 ::: {.column width="30%"}
-[![Enciclopédia de Genes e Genomas de Kioto [@kanehisa2000].](https://www.genome.jp/Fig/kegg128.gif){fig-align="left" width="250"}](https://www.genome.jp/kegg/pathway.html)
+[![Enciclopédia de Genes e Genomas de Kioto .](https://www.genome.jp/Fig/kegg128.gif){fig-align="left" width="250"}](https://www.genome.jp/kegg/pathway.html)
 :::
 
 ::: {.column width="70%"}
@@ -422,13 +440,13 @@ Sistema de classificação padronizado que descreve as funções de genes e seus
 :::
 
 ::: {.column width="30%"}
-[![Gene Ontology.](https://geneontology.org/assets/go-logo.large.png){fig-align="center" width="350"}](https://geneontology.org/)
+[![Gene Ontology .](https://geneontology.org/assets/go-logo.large.png){fig-align="center" width="350"}](https://geneontology.org/)
 :::
 :::
 
 ## MSigDB
 
-[![Molecular Signatures Database [@subramanian2005].](img/msigdb.png){fig-align="center"}](https://www.gsea-msigdb.org/gsea/index.jsp)
+[![Molecular Signatures Database .](img/msigdb.png){fig-align="center" width="1000"}](https://www.gsea-msigdb.org/gsea/index.jsp)
 
 # Escores biológicos
 
@@ -496,13 +514,13 @@ fisher.test(d, alternative = "greater")
 
 ## Gene Set Enrichment Analysis (GSEA)
 
-::: columns
-::: column
-:::
+-   $$
+    Rank =-\log_{10}(FDR)*\log_2{FC}
+    $$
 
-::: column
-:::
-:::
+-   GSEA realiza permutações e calcula p-valor da análise;
+
+-   `{fgsea}` [@fgsea];
 
 ## Gene Set Variation Analysis (GSVA)
 
@@ -512,19 +530,27 @@ fisher.test(d, alternative = "greater")
 
 -   O GSVA [@hänzelmann2013] realiza uma alteração nos sistemas de coordenadas, transformando os dados de uma matriz de gene por amostra em uma matriz de conjunto de genes por amostra, permitindo assim a avaliação do enriquecimento de vias para cada amostra;
 
+<br>
+
+-   `{GSVA}` ;
+
 ## Gene Set Variation Analysis (GSVA)
 
-[![GSVA outline .](img/12859_2012_Article_5762_Fig1_HTML.webp){fig-align="center" width="1200"}](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-7/figures/1)
+[![GSVA outline.](img/12859_2012_Article_5762_Fig1_HTML.webp){fig-align="center" width="1200"}](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-14-7/figures/1)
 
 # Trabalhos
 
-## Epigenética e fenotipagem forense por DNA - *Long reads sequencing*
+## Epigenética e fenotipagem forense por DNA
 
 [![Usos forense do DNA .](img/forense.png)](https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2021.708222/full)
 
 ## Epigenética e fenotipagem forense por DNA
 
 ![STR - Microsatalites](img/strs.png)
+
+##  {.untitle}
+
+![](https://nuvacolors.com/cdn/shop/articles/Screenshot_2023-11-15_at_05.31.56.png?v=1700001269){fig-align="center" width="1150"}
 
 ## Epigenética e fenotipagem forense por DNA
 
@@ -533,6 +559,16 @@ fisher.test(d, alternative = "greater")
 ## Epigenética e fenotipagem forense por DNA
 
 ![Comparação de sequenciamento de leituras curtas e longas.](img/short_long.png){fig-align="center"}
+
+## Epigenética e fenotipagem forense por DNA
+
+-   Em fase de coletas;
+
+-   N = 32 (atualmente 11 coletados);
+
+-   Pele, sangue e saliva;
+
+-   Predição de fenótipos e de idade;
 
 ## Biomateriais e remodelamento ósseo
 
@@ -566,11 +602,35 @@ fisher.test(d, alternative = "greater")
 
 ## OsteoBLAST
 
-![](img/OsteoBLAST.png){fig-align="center"}
+![Paper [@Ferreira2020].](img/OsteoBLAST.png){fig-align="center"}
+
+## OsteoBLAST
+
+![Paper \[\@Ferreira2020\].](img/osteoblast_res.png){fig-align="center"}
 
 ## OsteoBLAST - GSVA scores
 
+::: columns
+::: {.column width="50%"}
+[![Groen et al .](img/paperGroen.png)](https://onlinelibrary.wiley.com/doi/abs/10.1002/adhm.201500171)
+:::
+
+::: {.column width="50%"}
+-   23 biomateriais;
+
+<br>
+
+-   Transcriptoma;
+
+<br>
+
+-   Células MG-63;
+:::
+:::
+
 ## OsteoBLAST - GSVA scores
+
+![Comparações usando GSVA [@ferreira2020].](img/gsva_res.png){fig-align="center" width="1200"}
 
 ## OsteoCLUST
 
@@ -588,6 +648,14 @@ fisher.test(d, alternative = "greater")
 :::
 :::
 
+## Predição de vias {.smaller}
+
+![Predição de alvos [@lemesdossantossanna2024].](img/rede.png)
+
+## Redes de correlação {.smaller}
+
+![Redes de correlação.](img/paperPRP.png){fig-align="center" width="1200"}
+
 ## Biomimética {.smaller}
 
 ::: columns
@@ -596,7 +664,15 @@ fisher.test(d, alternative = "greater")
 :::
 
 ::: column
--   "Construção de unidades biomiméticas a partir de plasma rico em plaquetas associado ao fluído caótico utilizando misturadores estáticos: perspectivas de novos processos biotecnológicos para regeneração do tecido ósseo".\
+-   "Construção de unidades biomiméticas a partir de plasma rico em plaquetas associado ao fluído caótico utilizando misturadores estáticos: perspectivas de novos processos biotecnológicos para regeneração do tecido ósseo".
+
+<br>
+
+-   Buscar mimetizar o ambiente ósseo no momento da regeneração;
+
+<br>
+
+-   Proteoma;
 :::
 :::
 
@@ -611,5 +687,27 @@ fisher.test(d, alternative = "greater")
 ![Fluxo caótico [@chávez-madero2020].](img/fluxoCaotico.png){fig-align="center" width="750"}
 :::
 :::
+
+# Constatações
+
+## Constatações
+
+-   Bioinformática é tão boa quanto o dado usado nela;
+
+-   Modelo experimental e a coleta de dados são fundamentais;
+
+-   Big data;
+
+-   Machine Learning;
+
+## Convite
+
+![](img/post - wokshop de bioinfo forense.png){fig-align="center" width="750"}
+
+# Agradecimentos
+
+![](img/thanks.png){fig-align="center" width="1100"}
+
+# Obrigado!
 
 ## Referências
